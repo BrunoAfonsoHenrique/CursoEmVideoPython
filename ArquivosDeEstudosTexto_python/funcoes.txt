@@ -1,0 +1,24 @@
+<<< Funções >>>
+
+Funções --> Rotina
+
+------------------------------------------------------
+def mostraLinha():
+	print('-'*30)
+
+mostraLinha()
+print('Sistema')
+mostraLinha()
+------------------------------------------------------
+
+Usando paramêtros:
+
+def mensagem(msg):
+	print('-'*30)
+	print(msg)
+	print('-'*30)
+
+mensagem('Sistema de alunos')
+------------------------------------------------------
+
+

@@ -1,0 +1,27 @@
+<<< Estrutura de repetição for >>>
+
+laço cont no intervalo(1, 10)
+	passo
+passo
+
+--------
+
+for cont in range (1, 10):
+	print(cont)
+**
+------
+
+laço cont no intervalo(0,3)
+	passo
+	pula
+passo
+pega
+-------
+
+for c in range (0, 3):
+	passo
+	pula
+passo
+pula
+-----------------
+

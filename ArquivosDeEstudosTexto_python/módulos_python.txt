@@ -1,0 +1,40 @@
+<<< Módulos >>>
+
+EX: 
+
+>>> import bebibas (todas as funcionalidades de bebidas)
+>>> import doces (todos as funcionalidades de doces)
+
+----
+
+>>> from doces import pudim (importa um item de "doces")
+
+----
+
+import math
+	ceil (arredendamento para cima)
+	floor (arredendamento para baixo)
+	trunc (truncar)
+	pow (potência)
+	sqrt (raiz quadrada)
+	factoril (fatorial)
+
+from math import sqrt
+
+----
+
+python.org > docs > escolhe a versão > Libray Reference
+
+python.org > docs > escolhe a versão > PyPI (indice de pacotes extras)
+
+---
+
+Pycharm > Settings > Python Interprater
+
+
+
+
+
+
+
+

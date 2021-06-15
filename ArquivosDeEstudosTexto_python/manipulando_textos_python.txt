@@ -1,0 +1,106 @@
+<<< Manipulando texto >>>
+
+# Aula 09
+
+frase = 'Curso em video Python'
+
+---------------------------------------------
+
+print('\n<<< Fatiamento de String >>>')
+
+print(frase)
+
+print(frase[9]) #Pega a letra que esta no espaço 9
+
+print(frase[9:13]) #Começa em 9 e pega até o espaço 12, exclui o 13
+
+print(frase[9:21]) #Começa em 9 e pega até o 20, exclui o 21
+
+print(frase[9:21:2]) #Começa em 9 e pega até o 20, pula de dois em dois
+
+print(frase[:5]) #Pega o começo da string e vai até 4
+
+print(frase[15:]) #Começa em 15 e vai até o final da string
+
+print(frase[9::3]) #Começa em 9, vai até o final da string pulando de 3 em 3
+
+--------------------------------------
+
+print('\n<<< Análise >>>') 
+
+print(len(frase)) #Mostra o comprimento
+
+print(frase.count('o')) #conta quantas vezes aparece a letra "o" minuscula
+
+print(frase.count('o', 0, 13)) #Faz ontagem já com fatiamento, faz uma contagem do 0 ao 12 e conta quantas vezes aparece a letra o minuscula
+
+print(frase.find('deo')) #Mostra em que posição começa 'deo', começa na posição 11
+
+print(frase.find('Android')) #Localiza a string 'Android'
+'''retorna: -1, se não encontra na string'''
+
+print('Curso' in frase) #Existe a palavra 'Curso' em frase, retorna: True ou False
+
+---------------------------------
+
+print('\n<<< Transformação >>>\n')
+
+print(frase.replace('Python', 'Apple')) #Procura por 'Python' e substitui por 'Apple'. Substitui na instancia.
+
+print(frase)
+
+print(frase.upper()) #Tudo em maiusculo
+
+print(frase.lower()) #Tudo em minusculo.
+
+print(frase.capitalize()) #Joga todos os caracteres em minusculo e a primeira letra da string fica em maiusculo
+
+print(frase.title()) #Analisa quantas palavras tem a string e coloca a primeira letra de cada palavra em maiusculo.
+
+frase2 = '   Aprenda Python  '
+
+print(frase2) #
+
+print(frase2.strip()) #Remove todos os espaços inuteis da string
+
+print(frase2.rstrip()) #Remove todos os espaços da direita
+
+print(frase2.lstrip()) #Remove todos os espaços da esquerda
+
+--------------------------------------------------
+
+print('\n<<< Divisão >>>\n') 
+
+print(frase.split()) #Ocorre uma divisão dentro da string onde ocorre os espaços
+
+---------------------------------------------------
+
+print('\n<<< Junção >>>\n') 
+
+print('-'.join(frase)) #junta todos os elementos de frase
+
+-------------------------------------------------------
+
+>>>Fatiamento de String;
+
+>>>Análise:
+    len();
+    count();
+    find();
+    in;
+
+>>>Transformação:
+    replace();
+    upper();
+    lower();
+    capitalize();
+    title();
+    strip();
+    rtrip();
+    lstrip();
+
+>>>Divisão:
+    split();
+
+>>>Junção:
+    join();

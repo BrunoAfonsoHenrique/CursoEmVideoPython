@@ -1,0 +1,119 @@
+ >>>>  LISTAS  <<<<
+
+NOTA: Listas são mutáveis
+
+listas usam colchetes []
+lanche = ['Hamburguer', 'Cerveja', 'Pizza', 'Pudim']
+
+lanche.append('Cokie') --> Adiciona pelo final um elemento
+lanche = ['Hamburguer', 'Cerveja', 'Pizza', 'Pudim', 'Cokie']
+
+lanche.insert(0,'Cachorro-quente') --> Adiciona um elemento em qualquer espaço, mas não
+apaga o elemento que estava. Ele ajusta a lista.
+lanche = ['Cachorro-quente', 'Hamburguer', 'Cerveja', 'Pizza', 'Pudim', 'Cokie']
+
+>>> Apagando elementos
+del lanche[3]  --> Remover pela chave/indice
+lanche.pop(3) --> Remover pela chave/indice
+lanche.remove('Pizza')  --> Remover pelo conteúdo
+dado.clear()
+
+if 'Pizza' in lanche:
+	lanche.remove('Pizza')
+
+valores = list(range(4,11)):
+#4, 5, 6, 7, 8, 9, 10
+print(valores[3]) --> 7
+
+8, 2, 5
+valores.sort() --> ordena os valores
+#2, 5, 8
+
+Ordem inversa
+valores.sort(reverse=True)
+#8, 5, 2
+
+4, 5, 6, 7, 8, 9, 10
+len(valores) --> Tamanho
+7
+
+--------------------------------------------------------------------------
+valores = list()
+valores.append(5)
+valores.append(9)
+valores.append(4)
+
+for c, v in enumerate(valores): --> Mostra o indice e o conteudo
+    print(f'Na posição {c} encontrei o valor {v}...')
+
+>>> Inserindo valores em uma lista via laço for:
+
+valores = list()
+for cont in range(0, 5):
+    valores.append(int(input('Digite um valor: ')))
+
+for c, v in enumerate(valores):
+    print(f'Na posição {c} encontrei o valor {v}...')
+print('Cheguei ao final da lista!')
+
+--------------
+Copiando uma lista
+a = [2, 3, 4, 7]
+b = a[:]  --> Cria uma cópia de A (b = a[:] é diferente de b = a)
+b[2] = 8
+print(f'Lista A: {a}')
+print(f'Lista B: {b}')
+
+--------------------------
+maior e menor valor numa lista
+
+Lista principal é pessoas
+lista temporaria é dados
+
+    if len(pessoas) == 0:
+        maior = menor = dados[1]
+    else:
+        if dados[1] > maior:
+            maior = dados[1]
+        if dados[1] < menor:
+            menor = dados[1]
+    pessoas.append(dados[:])
+
+    dados.clear()
+---------------------------------------
+
+Cód importante
+lista = list()
+while True:
+    nome = str(input('Digite o nome: '))
+    nota1 = float(input('Digite a nota 1: '))
+    nota2 = float(input('Digite a nota 2: '))
+
+    media = (nota1 + nota2) / 2
+
+    lista.append([nome, [nota1, nota2], media])
+
+    continuar = ' '
+    while continuar not in 'SN':
+        continuar = str(input('Deseja coninuar? [S/N] ')).strip().upper()[0]
+    if continuar == 'N':
+        break
+    print('--'*12)
+print('-='*35)
+print(f'{"No":<5}{"NOME":<10}{"MÉDIA":<8}')
+print('--'*12)
+
+for e, i in enumerate(lista):
+    print(f'{e:<5}{i[0]:<10}{i[2]:<8.1f}')
+print(print('--'*20))
+
+while True:
+    op = int(input('Mostrar notas de qual aluno? (999 interrompe): '))
+
+    if op == 999:
+        print('Finalizando...')
+        break
+    if op <= len(lista) - 1:
+        print(f'Notas de {lista[op][0]} são: {lista[op][1]}')
+    print('--'*35)
+print('FIM!!!')

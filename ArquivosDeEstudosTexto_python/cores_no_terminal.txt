@@ -1,0 +1,47 @@
+ <<< Cores no terminal >>>
+
+--------------
+
+\033[0;30;41m
+\033[4;33;44m
+\033[1;35;43m
+\033[30;42m
+\33[m           #configuração padrão do terminal
+\33[7:30m       #inversão --> 7 inverte
+
+-------------
+
+none
+1 bold
+4 underline
+7 negative
+-------------
+
+cód de texto
+30 branco
+31 vermelho
+32 verde
+33 amarelo
+34 zul
+35 lilas
+36 azulmarinho
+37 cinza
+--------------
+
+Cód de fundo
+40 a 47
+
+--------------------
+Exemplos:
+
+print('\033[4;30;45mOlá, mundo!\33[m')
+
+print('\033[31m<<< Cores no terminal >>>\033[m\n')
+print('Oa valores são \033[33m{}\033[m e \033[31m{}\033[m !!!'.format(a , b))
+
+nome = 'Bruno'
+cores = {'limpa':'\033[m',
+         'azul':'\033[34m',
+         'amarelo':'\033[33m',
+         'pretobranco':'\033[7;30m'}
+print('Olá, Muito prazer {}{}{} !!!'.format(cores['amarelo'], nome, cores['azul']))
